@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4faeb;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    background: #c2b360;
+    color: white;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #141413;
+}
+
+.biodata p{
+    margin: 6px 0;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.content div{
+    background: #99772e;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h3{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #b49b6d;
+    padding-bottom: 5px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #cfaf58;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .profile{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content{
+        grid-template-columns: 1fr;
+    }
+}
